@@ -1,0 +1,59 @@
+# //  Questa Sim-64
+# //  Version 10.5c_2 linux_x86_64 Oct 17 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:44:04 on Apr 21,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:44:04 on Apr 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:44:04 on Apr 21,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:44:04 on Apr 21,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=1 -GERRNO=0 
+# Start time: 15:44:04 on Apr 21,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Loading sv_std.std
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start second test case
+# done!
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(114)
+#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 114
+# End time: 15:44:35 on Apr 21,2018, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 1
