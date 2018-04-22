@@ -35,7 +35,10 @@ module math_computer_tb#(integer testcase = 0,
     // instanciation du compteur
     math_computer dut(clk, rst, input_itf, output_itf);
 
-    // génération de l'horloge
+	// Création de l'objet InDUT
+	InDUTspec inputDUT = new;
+
+    // Génération de l'horloge
     always #5 clk = ~clk;
 
     // clocking block
@@ -50,6 +53,19 @@ module math_computer_tb#(integer testcase = 0,
                result       = output_itf.result,
                output_valid = output_itf.valid;
     endclocking
+
+	// Covergroup
+	covergroup cov_group;
+		cov_a: coverpoint cb.a;
+		cov_b: coverpoint cb.b;
+		cov_c: coverpoint cb.c;
+		cov_result: coverpoint cb.result;
+	endgroup
+
+	cov_group cg_inst = new;
+
+	always @ (posedge clk) cg_inst.sample();
+
 
     task test_case0();
         $display("Let's start first test case");
@@ -102,6 +118,42 @@ module math_computer_tb#(integer testcase = 0,
         end
     endtask
 
+	task test_case2();
+		$display("Let's start third test case");
+		if(!inputDUT.randomize()) $error(" No solutions for randomize");
+
+		cb.a <= inputDUT.a;
+		cb.b <= inputDUT.b;
+		cb.c <= inputDUT.c;
+		cb.input_valid  <= 0;
+		cb.output_ready <= 0;
+
+		##1;
+		// Le reset est appliqué 5 fois d'affilée
+		repeat (5) begin
+			cb.rst <= 1;
+			##1 cb.rst <= 0;
+			##10;
+		end
+
+		do
+			begin
+				// randomisation des valeurs
+				assert (inputDUT.randomize()) else $error(" No solutions for randomize");
+
+				cb.input_valid <= 1;
+				cb.a <= inputDUT.a;
+				cb.b <= inputDUT.b;
+				cb.c <= inputDUT.c;
+
+				##1;
+				##($urandom_range(100));
+				cb.output_ready <= 1;
+			end
+		while (cg_inst.get_inst_coverage()< 99.9);
+	endtask
+
+
     // Programme lancé au démarrage de la simulation
     program TestSuite;
         initial begin
@@ -109,9 +161,12 @@ module math_computer_tb#(integer testcase = 0,
                 test_case0();
             else if (testcase == 1)
                 test_case1();
+			else if (testcase == 2)
+				test_case2();
             else
                 $display("Ach, test case not yet implemented");
             $display("done!");
+		 	$display("Ending with coverage : %f", cg_inst.get_inst_coverage());
             $stop;
         end
     endprogram
