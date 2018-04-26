@@ -16,7 +16,7 @@
 # ../src_sv
 # ../src_tb
 # QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:14:27 on Apr 22,2018
+# Start time: 14:37:11 on Apr 26,2018
 # vlog -reportprogress 300 ../src_sv/math_computer.sv 
 # -- Compiling interface math_computer_input_itf
 # -- Compiling interface math_computer_output_itf
@@ -24,10 +24,10 @@
 # 
 # Top level modules:
 # 	math_computer
-# End time: 11:14:27 on Apr 22,2018, Elapsed time: 0:00:00
+# End time: 14:37:11 on Apr 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:14:27 on Apr 22,2018
+# Start time: 14:37:11 on Apr 26,2018
 # vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
 # -- Compiling interface math_computer_input_itf
 # -- Compiling interface math_computer_output_itf
@@ -37,387 +37,10 @@
 # 
 # Top level modules:
 # 	math_computer_tb
-# End time: 11:14:27 on Apr 22,2018, Elapsed time: 0:00:00
+# End time: 14:37:12 on Apr 26,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:14:27 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# Let's start third test case
-# done!
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(168)
-#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 168
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:15:02 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:15:02 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:15:02 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:15:02 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:15:03 on Apr 22,2018, Elapsed time: 0:00:36
-# Errors: 0, Warnings: 1
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:15:03 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# Let's start third test case
-# done!
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(167)
-#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 167
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:17:08 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:17:08 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:17:08 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:17:09 on Apr 22,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# End time: 11:17:10 on Apr 22,2018, Elapsed time: 0:02:07
-# Errors: 0, Warnings: 4
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:17:10 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# ** Warning: (vsim-PLI-3691) ../src_tb/math_computer_tb.sv(167): Expected a system task, not a system function '$get_coverage'.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb/TestSuite File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Error (suppressible): (vsim-PLI-3070) ../src_tb/math_computer_tb.sv(167): $get_coverage : Too many arguments.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb/TestSuite File: ../src_tb/math_computer_tb.sv
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./../scripts/sim.do PAUSED at line 68
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:19:10 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:19:10 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:19:10 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# ** Warning: ../src_tb/math_computer_tb.sv(167): (vlog-2240) Treating stand-alone use of function 'get_inst_coverage' as an implicit VOID cast.
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:19:10 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:17:10 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# Let's start third test case
-# done!
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(168)
-#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 168
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:20:52 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:20:52 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:20:52 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:20:52 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:20:54 on Apr 22,2018, Elapsed time: 0:03:44
-# Errors: 1, Warnings: 9
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:20:54 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# Let's start third test case
-# done!
-# Ending with coverage : 13.671875
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(168)
-#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 168
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:21:58 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:21:58 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:21:58 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:21:58 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:21:59 on Apr 22,2018, Elapsed time: 0:01:05
-# Errors: 0, Warnings: 4
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:21:59 on Apr 22,2018
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
-# Loading sv_std.std
-# Loading work.math_computer_tb_sv_unit
-# Loading work.math_computer_tb
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
-# Loading work.math_computer_input_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
-# Loading work.math_computer_output_itf
-# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
-# Loading work.math_computer
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
-# or another expression.
-#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
-# Let's start third test case
-# done!
-# Ending with coverage : 16.406250
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(168)
-#    Time: 6265 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 168
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:27:07 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:27:07 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:27:07 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(154): near "endtask": syntax error, unexpected endtask, expecting ';'.
-# End time: 11:27:07 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
-# Error in macro ./../scripts/sim.do line 68
-# /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
-#     while executing
-# "vlog +incdir+$Path_DUT $Path_TB/math_computer_tb.sv"
-#     (procedure "tb_compile" line 6)
-#     invoked from within
-# "tb_compile"
-#     (procedure "do_all" line 3)
-#     invoked from within
-# "do_all 2 0"
-#     invoked from within
-# "if {$argc>1} {
-#   if {[string compare $1 "all"] == 0} {
-#     do_all 0 $2
-#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
-#     vhdl_compil
-#   } elseif ..."
-do ../scripts/sim.do
-# ../src_sv
-# ../src_tb
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:27:18 on Apr 22,2018
-# vlog -reportprogress 300 ../src_sv/math_computer.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling module math_computer
-# 
-# Top level modules:
-# 	math_computer
-# End time: 11:27:18 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
-# Start time: 11:27:18 on Apr 22,2018
-# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
-# -- Compiling interface math_computer_input_itf
-# -- Compiling interface math_computer_output_itf
-# -- Compiling package math_computer_tb_sv_unit
-# -- Compiling module math_computer_tb
-# -- Compiling program TestSuite
-# 
-# Top level modules:
-# 	math_computer_tb
-# End time: 11:27:18 on Apr 22,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 11:27:19 on Apr 22,2018, Elapsed time: 0:05:20
-# Errors: 4, Warnings: 4
-# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
-# Start time: 11:27:19 on Apr 22,2018
+# Start time: 14:37:12 on Apr 26,2018
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
 # Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
@@ -442,8 +65,916 @@ do ../scripts/sim.do
 # Let's start third test case
 # done!
 # Ending with coverage : 100.000000
-# ** Note: $stop    : ../src_tb/math_computer_tb.sv(170)
-#    Time: 403375 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
-# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 170
-# End time: 11:29:10 on Apr 22,2018, Elapsed time: 0:01:51
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(182)
+#    Time: 418995 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 182
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:46:58 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 14:46:58 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:46:58 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 14:46:58 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:46:59 on Apr 26,2018, Elapsed time: 0:09:47
 # Errors: 0, Warnings: 4
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 14:46:59 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(182)
+#    Time: 523005 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 182
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:48:10 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 14:48:10 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:48:10 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 14:48:10 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 14:48:11 on Apr 26,2018, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 4
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 14:48:11 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(182)
+#    Time: 523005 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 182
+
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:48:43 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 14:48:43 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:48:43 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 14:48:44 on Apr 26,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:48:46 on Apr 26,2018, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 4
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 14:48:46 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(182)
+#    Time: 418995 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 182
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:59:53 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 14:59:53 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 14:59:53 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# ** Error: ../src_tb/math_computer_tb.sv(71): (vlog-2730) Undefined variable: 'cov_a'.
+# ** Error: ../src_tb/math_computer_tb.sv(72): (vlog-2730) Undefined variable: 'cov_b'.
+# ** Error: ../src_tb/math_computer_tb.sv(73): (vlog-2730) Undefined variable: 'cov_c'.
+# ** Error: ../src_tb/math_computer_tb.sv(75): (vlog-2730) Undefined variable: 'cov_result'.
+# End time: 14:59:54 on Apr 26,2018, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+# ** Error: /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+# Error in macro ./../scripts/sim.do line 68
+# /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+$Path_DUT $Path_TB/math_computer_tb.sv"
+#     (procedure "tb_compile" line 6)
+#     invoked from within
+# "tb_compile"
+#     (procedure "do_all" line 3)
+#     invoked from within
+# "do_all 2 0"
+#     invoked from within
+# "if {$argc>1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all 0 $2
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif ..."
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:00:42 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:00:42 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:00:42 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:00:42 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:00:48 on Apr 26,2018, Elapsed time: 0:12:02
+# Errors: 7, Warnings: 4
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:00:48 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(59): Clocking block output cb.a is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(189)
+#    Time: 418995 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 189
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:02:02 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:02:02 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:02:02 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:02:02 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:02:10 on Apr 26,2018, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 4
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:02:10 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(60): Clocking block output cb.b is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# ** Warning: (vsim-8441) ../src_tb/math_computer_tb.sv(61): Clocking block output cb.c is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Instance: /math_computer_tb File: ../src_tb/math_computer_tb.sv
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(189)
+#    Time: 419065 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 189
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:03:31 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:03:31 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:03:32 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:03:32 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:03:34 on Apr 26,2018, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 3
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:03:34 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(189)
+#    Time: 419065 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 189
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:04:29 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:04:30 on Apr 26,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:04:30 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:04:30 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:04:32 on Apr 26,2018, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:04:32 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(191)
+#    Time: 419065 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 191
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:10:57 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:10:57 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:10:57 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# ** Warning: ../src_tb/class_variables.sv(18): (vlog-2570) Zero-length range with constant bounds. Low-bound and high-bound may be reversed.
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:10:57 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# End time: 15:10:59 on Apr 26,2018, Elapsed time: 0:06:27
+# Errors: 0, Warnings: 2
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:10:59 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# ** Warning: (vsim-7055) ../src_tb/class_variables.sv(18): Zero-length range detected. Low-bound and high-bound may be reversed.
+#    Time: 0 ns  Iteration: 1  Instance: /math_computer_tb/TestSuite
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 75.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(191)
+#    Time: 6805 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 191
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:11:29 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:11:29 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:11:29 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:11:29 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:11:31 on Apr 26,2018, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 2
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:11:31 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 93.750000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(191)
+#    Time: 37875 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 191
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:15:10 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:15:11 on Apr 26,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:15:11 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:15:11 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:15:15 on Apr 26,2018, Elapsed time: 0:03:44
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:15:15 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(192)
+#    Time: 51366825 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 192
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:29:45 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:29:45 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:29:45 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(60): near "wildcard": syntax error, unexpected "SystemVerilog keyword 'wildcard'", expecting "SystemVerilog keyword 'coverpoint'".
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(61): near "coverpoint": syntax error, unexpected "SystemVerilog keyword 'coverpoint'", expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(63): near "coverpoint": syntax error, unexpected "SystemVerilog keyword 'coverpoint'", expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(69): near "coverpoint": syntax error, unexpected "SystemVerilog keyword 'coverpoint'", expecting "SystemVerilog keyword 'assert' " or "SystemVerilog keyword 'assume' " or restrict .
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(73): near "=": syntax error, unexpected '=', expecting ';'.
+# End time: 15:29:45 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+# Error in macro ./../scripts/sim.do line 68
+# /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+$Path_DUT $Path_TB/math_computer_tb.sv"
+#     (procedure "tb_compile" line 6)
+#     invoked from within
+# "tb_compile"
+#     (procedure "do_all" line 3)
+#     invoked from within
+# "do_all 2 0"
+#     invoked from within
+# "if {$argc>1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all 0 $2
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif ..."
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:31:37 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:31:37 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:31:37 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:31:37 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:31:55 on Apr 26,2018, Elapsed time: 0:16:40
+# Errors: 8, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:31:55 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 20.312500
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(198)
+#    Time: 15755 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 198
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:34:00 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:34:00 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:34:00 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:34:00 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:34:21 on Apr 26,2018, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:34:21 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(203)
+#    Time: 241704875 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 203
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:41:54 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:41:54 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:41:54 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(207): near "else": syntax error, unexpected else.
+# End time: 15:41:55 on Apr 26,2018, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+# Error in macro ./../scripts/sim.do line 68
+# /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+$Path_DUT $Path_TB/math_computer_tb.sv"
+#     (procedure "tb_compile" line 6)
+#     invoked from within
+# "tb_compile"
+#     (procedure "do_all" line 3)
+#     invoked from within
+# "do_all 2 0"
+#     invoked from within
+# "if {$argc>1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all 0 $2
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif ..."
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:42:35 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:42:35 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:42:35 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# ** Error: (vlog-13069) ../src_tb/math_computer_tb.sv(207): near "else": syntax error, unexpected else.
+# End time: 15:42:35 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+# Error in macro ./../scripts/sim.do line 68
+# /opt/mentor/questasim/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+$Path_DUT $Path_TB/math_computer_tb.sv"
+#     (procedure "tb_compile" line 6)
+#     invoked from within
+# "tb_compile"
+#     (procedure "do_all" line 3)
+#     invoked from within
+# "do_all 2 0"
+#     invoked from within
+# "if {$argc>1} {
+#   if {[string compare $1 "all"] == 0} {
+#     do_all 0 $2
+#   } elseif {[string compare $1 "comp_vhdl"] == 0} {
+#     vhdl_compil
+#   } elseif ..."
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:43:06 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:43:06 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:43:06 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:43:06 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:43:26 on Apr 26,2018, Elapsed time: 0:09:05
+# Errors: 8, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:43:26 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 93.750000
+# Ending with output coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(215)
+#    Time: 402835 ns  Iteration: 2  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 215
+do ../scripts/sim.do
+# ../src_sv
+# ../src_tb
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:44:38 on Apr 26,2018
+# vlog -reportprogress 300 ../src_sv/math_computer.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling module math_computer
+# 
+# Top level modules:
+# 	math_computer
+# End time: 15:44:38 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.5c_2 Compiler 2016.10 Oct 17 2016
+# Start time: 15:44:38 on Apr 26,2018
+# vlog -reportprogress 300 "+incdir+../src_sv" ../src_tb/math_computer_tb.sv 
+# -- Compiling interface math_computer_input_itf
+# -- Compiling interface math_computer_output_itf
+# -- Compiling package math_computer_tb_sv_unit
+# -- Compiling module math_computer_tb
+# -- Compiling program TestSuite
+# 
+# Top level modules:
+# 	math_computer_tb
+# End time: 15:44:38 on Apr 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:44:58 on Apr 26,2018, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -novopt work.math_computer_tb -Gtestcase=2 -GERRNO=0 
+# Start time: 15:44:58 on Apr 26,2018
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_tb_sv_unit
+# Loading sv_std.std
+# Loading work.math_computer_tb_sv_unit
+# Loading work.math_computer_tb
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_input_itf
+# Loading work.math_computer_input_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer_output_itf
+# Loading work.math_computer_output_itf
+# Refreshing /mnt/hgfs/VSN/Labos/labo4_sv_intro_compute/code/comp/work.math_computer
+# Loading work.math_computer
+# Let's start third test case
+# done!
+# Ending with input coverage : 100.000000
+# Ending with output coverage : 100.000000
+# ** Note: $stop    : ../src_tb/math_computer_tb.sv(215)
+#    Time: 241315785 ns  Iteration: 3  Instance: /math_computer_tb/TestSuite
+# Break in Module math_computer_tb at ../src_tb/math_computer_tb.sv line 215

@@ -55,17 +55,36 @@ module math_computer_tb#(integer testcase = 0,
     endclocking
 
 	// Covergroup
-	covergroup cov_group;
-		cov_a: coverpoint cb.a;
-		cov_b: coverpoint cb.b;
-		cov_c: coverpoint cb.c;
-		cov_result: coverpoint cb.result;
+	covergroup cov_group_in;
+		cov_a: coverpoint input_itf.a {
+			wildcard bins petit = {`DATASIZE'b00000000000000??};
+			wildcard bins grand = {`DATASIZE'b11??????????????};
+			bins autres = default;
+		}
+		cov_b: coverpoint input_itf.b {
+			wildcard bins petit = {`DATASIZE'b00000000000000??};
+			wildcard bins grand = {`DATASIZE'b11??????????????};
+			bins autres = default;
+		}
+		cov_c: coverpoint input_itf.c {
+			bins moyen = {[1000:2000]};
+			bins autres = default;
+		}
+		cov_cross: cross cov_a, cov_b;
 	endgroup
 
-	cov_group cg_inst = new;
+	covergroup cov_group_out;
+		cov_result: coverpoint output_itf.result;
+	endgroup
 
-	always @ (posedge clk) cg_inst.sample();
+	cov_group_in cg_inst_in = new;
+	cov_group_out cg_inst_out = new;
 
+	always @ (cb.a) cg_inst_in.sample();
+	always @ (cb.b) cg_inst_in.sample();
+	always @ (cb.c) cg_inst_in.sample();
+
+	always @ (cb.result) cg_inst_out.sample();
 
     task test_case0();
         $display("Let's start first test case");
@@ -92,10 +111,11 @@ module math_computer_tb#(integer testcase = 0,
         end
     endtask
 
+	// Exercice 1
     task test_case1();
         $display("Let's start second test case");
-        cb.a <= $random;
-        cb.b <= $random;
+        cb.a <= 0;
+        cb.b <= 0;
         cb.c <= 0;
         cb.input_valid  <= 0;
         cb.output_ready <= 0;
@@ -109,12 +129,17 @@ module math_computer_tb#(integer testcase = 0,
         end
 
         repeat (10) begin
-            cb.input_valid <= 1;
+			cb.output_ready <= 1;
+			##1;
+			cb.output_ready <= 0;
+			##1;
         	cb.a <= $random;
         	cb.b <= $random;
-            ##1;
-            ##($urandom_range(100));
-            cb.output_ready <= 1;
+			if (cb.input_ready == 1)
+				cb.input_valid <= 1;
+			##1;
+			cb.input_valid <= 0;
+			##($urandom_range(100));
         end
     endtask
 
@@ -122,9 +147,9 @@ module math_computer_tb#(integer testcase = 0,
 		$display("Let's start third test case");
 		if(!inputDUT.randomize()) $error(" No solutions for randomize");
 
-		cb.a <= inputDUT.a;
-		cb.b <= inputDUT.b;
-		cb.c <= inputDUT.c;
+		cb.a <= 0;
+		cb.b <= 0;
+		cb.c <= 0;
 		cb.input_valid  <= 0;
 		cb.output_ready <= 0;
 
@@ -138,21 +163,33 @@ module math_computer_tb#(integer testcase = 0,
 
 		do
 			begin
+				cb.output_ready <= 1;
+				##1;
+				cb.output_ready <= 0;
+				##1;
 				// randomisation des valeurs
 				assert (inputDUT.randomize()) else $error(" No solutions for randomize");
 
-				cb.input_valid <= 1;
 				cb.a <= inputDUT.a;
 				cb.b <= inputDUT.b;
 				cb.c <= inputDUT.c;
 
+				if (cb.input_ready == 1)
+					cb.input_valid <= 1;
 				##1;
+				cb.input_valid <= 0;
+
 				##($urandom_range(100));
-				cb.output_ready <= 1;
 			end
-		while (cg_inst.get_inst_coverage()< 99.9);
+		//while (cg_inst_in.get_inst_coverage() < 100);
+		while (1);
 	endtask
 
+	task wait_for_coverage();
+		do
+			@(posedge clk);
+		while ((cg_inst_in.get_inst_coverage() < 100) || (cg_inst_out.get_inst_coverage() < 100));
+	endtask
 
     // Programme lancé au démarrage de la simulation
     program TestSuite;
@@ -162,11 +199,19 @@ module math_computer_tb#(integer testcase = 0,
             else if (testcase == 1)
                 test_case1();
 			else if (testcase == 2)
-				test_case2();
+				begin
+					fork
+						test_case2();
+						wait_for_coverage();
+					join_any
+					disable fork;
+				end
             else
                 $display("Ach, test case not yet implemented");
             $display("done!");
-		 	$display("Ending with coverage : %f", cg_inst.get_inst_coverage());
+		 	$display("Ending with input coverage : %f", cg_inst_in.get_inst_coverage());
+			$display("Ending with output coverage : %f", cg_inst_out.get_inst_coverage());
+
             $stop;
         end
     endprogram
